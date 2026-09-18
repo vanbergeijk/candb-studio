@@ -10,16 +10,16 @@ full protocol.
 
 ## Install
 
-```bash
-pip install candb-bridge
-```
-
-For PEAK PCAN-USB on Windows you also need the **PCAN-Basic** driver from PEAK,
-plus the python-can PCAN extra:
+This package is not published to PyPI. Install it from a local checkout
+of the CANdb Studio reposity with the following command, executed from a 
+command shell at the root of the CANdb Studio checkout folder:
 
 ```bash
-pip install "candb-bridge[pcan]"
+pip install -e ./bridge
 ```
+
+Ensure that after installation of the bridge, the installation target location
+reported by pip is included in the %PATH% environment variable.
 
 The extension launches the bridge as `python -m candb_bridge`. Override the
 interpreter with the `CANDB_BRIDGE_PYTHON` environment variable if needed
